@@ -31,3 +31,12 @@ Run
 `ng g m material --dry-run` - Create src/app/material/material.module.ts
 `ng g m shared/material --dry-run` - Create src/app/shared/material/material.module.ts 
 `ng g m shared/material --dry-run --flat`  - Create src/app/shared/material.module.ts
+`ng g m demo/demo --dry-run --flat --routing` - CREATE src/app/demo/demo-routing.module.ts  && src/app/demo/demo.module.ts 
+`ng g c demo/buttons --dry-run --skip-tests --inline-style --inline-template` 
+- CREATE src/app/demo/buttons/buttons.component.ts
+- UPDATE src/app/demo/demo.module.ts
+`ng g c demo/flexbox --dry-run --skip-tests`
+- CREATE src/app/demo/flexbox/flexbox.component.scss (0 bytes)
+- CREATE src/app/demo/flexbox/flexbox.component.html (22 bytes)
+- CREATE src/app/demo/flexbox/flexbox.component.ts (280 bytes)
+- UPDATE src/app/demo/demo.module.ts (594 bytes)
