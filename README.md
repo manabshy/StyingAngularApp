@@ -40,3 +40,9 @@ Run
 - CREATE src/app/demo/flexbox/flexbox.component.html (22 bytes)
 - CREATE src/app/demo/flexbox/flexbox.component.ts (280 bytes)
 - UPDATE src/app/demo/demo.module.ts (594 bytes)
+`ng g c contactmanager/contactmanager-app --dry-run --flat --skip-tests --inline-style --inline-template`
+- CREATE src/app/contactmanager/contactmanager-app.component.ts (300 bytes)
+- UPDATE src/app/contactmanager/contactmanager.module.ts (303 bytes)
+`ng g class contactmanager/models/user`
+`ng g class contactmanager/models/note --dry-run --skip-tests`
+`ng g s contactmanager/services/user --dry-run`
