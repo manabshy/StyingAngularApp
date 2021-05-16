@@ -46,3 +46,4 @@ Run
 `ng g class contactmanager/models/user`
 `ng g class contactmanager/models/note --dry-run --skip-tests`
 `ng g s contactmanager/services/user --dry-run`
+`ng g c contactmanager/components/new-contact-dialog --skip-tests --dry-run`
