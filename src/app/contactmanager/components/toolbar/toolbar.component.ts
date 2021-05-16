@@ -11,6 +11,9 @@ import { NewContactDialogComponent } from '../new-contact-dialog/new-contact-dia
 })
 export class ToolbarComponent implements OnInit {
   @Output() toggleSidenav = new EventEmitter<void>();
+  @Output() toggleTheme = new EventEmitter<void>();
+  @Output() toggleDir = new EventEmitter<void>();
+
   constructor(private dialog: MatDialog, private _snackBar: MatSnackBar, private router: Router) { }
 
   ngOnInit(): void {

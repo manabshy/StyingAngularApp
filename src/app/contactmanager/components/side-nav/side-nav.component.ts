@@ -15,12 +15,21 @@ const SMALL_WIDTH_BREAKPOINT = 720;
 export class SideNavComponent implements OnInit {
   public isScreenSmall: Boolean;
   users: Observable<User[]>;
+  isDarkTheme: boolean = false;
+  dir: string = 'ltr';
   @ViewChild(MatDrawer) drawer: MatDrawer;
   constructor(private breakpointObserver: BreakpointObserver,
     private userService: UserService,
     private router: Router) { }
 
-  ngOnInit(): void {
+  toggleTheme() {
+    this.isDarkTheme = !this.isDarkTheme;
+  }
+
+  toggleDir() {
+    this.dir = this.dir == 'ltr'? 'rtl' : 'ltr';
+  }
+   ngOnInit(): void {
     this.breakpointObserver
     .observe([`(max-width: ${SMALL_WIDTH_BREAKPOINT}px)`])
       .subscribe((state: BreakpointState) => {
